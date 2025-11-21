@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&family=Stack+Sans+Text:wght@200&display=swap');   
+
+body{
+    margin: 0;    
+    padding-top: 100px;
+    font-family: "Questrial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 5px solid rgb(148, 83, 161);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.site-logo{
+    font-family: 'Stack Sans Headline', sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-logo stan{
+    color: rgb(148, 83, 161);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.site-header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0 15px;
+    padding-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}   
+
+nav ul li a:hover{
+    color:rgb(148, 83, 161);
+    font-weight: bold;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+stan{
+    color: rgb(105, 63, 114);
+    font-weight: 700;
+}
+
+.feature img{
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+} 
+
+.hero{
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(148, 83, 161, 0.39);
+    border-radius: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    line-height: 1.5;
+    width: 75%;
+    margin: 0 auto;
+
+}   
+
+.event-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(148, 83, 161);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 25px;
+}
+
+@media (max-width:768px) {
+    .features{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        width: 300px;
+        margin-bottom: 30px;
+    }  
+    
+    .site-header nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.feature{
+    width: 300px;
+    text-align: center;
+}
+
+.feature p{
+    height: 60px;
+}   
+
+.site-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.site-footer nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+
+.about-us-hero{
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.about-us-hero h1{
+    color: rgb(148, 83, 161);
+    font-size: 35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mission-vision{
+    margin: 40px auto;
+    width: 60%;
+    padding: 20px;
+}
+
+.mv-class{
+    background-color: rgba(148, 83, 161, 0.281);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    
+}
+
+.mv-class h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}   
+
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(148, 83, 161, 0.281);
+}
+
+.contact-main h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}   
+
+input, textarea{
+    width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Questrial", sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    input, textarea{
+        width: 100%;
+    }   
+}   
+
+.submit-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(148, 83, 161);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.events-section{
+    display: flex;
+    justify-content: space-around;
+    margin:40px;
+}
+
+.events-section img{
+    width: 400px;
+    height: 250px;    
+    margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .events-section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+th, td {
+  padding: 10px 15px
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(148, 83, 161);
+    color: white;
+}
+
+@media (max-width:768px) {
+    table, th, td{
+        display: block;    
+    }
+}
+
+button.signup-btn{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: white;
+    color: rgb(180, 143, 229);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: solid 1px rgb(180, 143, 229);
+    cursor: pointer;
+}
+
+button.signup-btn:hover{
+    background-color: rgb(180, 143, 229);
+    color: white;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
